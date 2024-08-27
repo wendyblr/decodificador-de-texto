@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Decodificador de Texto</title>
+</head>
+<body>
+  <header>
+    <img src="./assets/aluralogo.png" class="aluralogo">
+  </header>
+  <main class="container">
+    <section class="container-child">
+      <div class="container-child-leftbox">
+        <div class="container-child__titleboxandtext">    
+          <div class="container-child__titlebox">
+            <h1 class="container-child__title">Decodificador de Texto</h1>
+            
+          </div>
+          <textarea class="container-child__input" placeholder="Digite seu texto"></textarea>
+        </div>
+        <div class="container-child__leftbottom">
+          <h5 class="container-child__rule">Acentos e caracteres especiais seráo removidos, letras maiúsculas serão convertidas em minúsculas.</h5>
+          <div class="container-child-buttons">
+            <button onclick="criptografarTexto()" class="container-child-button1">Criptografar</button>
+            <button onclick="descriptografarTexto()" class="container-child-button2">Descriptografar</button>
+          </div>
+        </div> 
+      </div>
+      <div class="container-child__rightbox">
+        <div class="container-child__rectangle">
+            <h2 class="container-child__output" id="mensagemCopiada"></h2>
+          <img src="./assets/notfound.png" id="notfound" alt="Pessoa segurando uma lupa e analisando um diamante." class="notfound">
+          <div class="container-child__rightbottom">
+            <div class="container-child__texts">
+              <h3 class="container-child__text1">Nenhuma mensagem encontrada</h3>
+              <h4 class="container-child__text2">Digite o texto que deseja criptografar ou descriptografar.</h4>
+              <button onclick="copiarTexto()" id="botaoCopiar" class="container-child__copybtn">Copiar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="credits">
+    <h6 class="madeby">Desenvolvido por Wendy B.</h6>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

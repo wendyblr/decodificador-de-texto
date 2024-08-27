@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+.aluralogo {
+  position: absolute;
+  top: 1%;
+}
+
+body 
+{
+  background-color: #f3f5fc;
+  box-sizing: border-box;
+  place-items: center;
+}
+
+.container 
+{
+  padding: 3% 12%;
+  display: grid;
+}
+
+.container-child 
+{
+  display: grid;
+  font-family: "JetBrains Mono", monospace;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.container-child-leftbox 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  gap: 10rem;
+}
+
+.container-child__leftbottom 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.container-child__rightbox 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.container-child__rectangle 
+{
+  width: 22rem;
+  height: 45rem;
+  background: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: space-between;
+  
+}
+
+.container-child__title 
+{
+  font-size: 3rem;
+  color: #0a3871;
+}
+
+.container-child__titleboxandtext 
+{
+  gap: 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.container-child__titlebox 
+{
+  align-items: center;
+  display: flex;
+}
+
+.container-child__input 
+{
+  font-size: 1.6rem;
+  color: #0a3871;
+  background-color: transparent;
+  font-family: "JetBrains Mono", monospace;
+  outline: none;
+  border: none;
+  resize: none;
+  padding: 1rem;
+  height: 20rem;
+}
+
+.container-child__output
+{
+  word-break: break-word;
+  visibility: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 1.3rem;
+  text-align: left;
+  margin-right: auto;
+  width: 100%;
+  padding-right: 3%;
+  box-sizing: border-box;
+}
+
+.container-child-buttons 
+{
+  color: black;
+  justify-content: center;
+  gap: 3.125rem;
+  display: flex;
+}
+
+.container-child-button1 
+{
+  width: 12.5rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  background-color: #0a3871;
+  border-radius: 1rem;
+  color: white;
+  border-color: #0a3871;
+}
+
+.container-child-button2 
+{
+  width: 12.5rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  background-color: #d8dfe8;
+  border-radius: 1rem;
+  color: #0a3871;
+  border-color: #0a3871;
+}
+
+.container-child__texts 
+{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+  align-items: center;
+}
+
+.container-child__text1 
+{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.container-child__text2 
+{
+  font-size: 0.7rem;
+}
+
+.container-child__rule 
+{
+  color: #495057;
+  font-size: 0.8rem;
+}
+
+.notfound 
+{
+  height: 50%;
+  width: 100%;
+}
+
+.container-child__copybtn 
+{
+  width: 12.5rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  background-color: white;
+  border-radius: 1rem;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.credits 
+{
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.madeby 
+{
+  background-color: transparent;
+  text-decoration: none;
+  color: darkblue;
+}
+
+.pecodigos 
+{
+  background-color: transparent;
+  text-decoration: none;
+  color: rgb(152, 152, 240);
+}
+
+.githublogo 
+{
+  height: 2rem;
+  width: 2rem;
+}
+
+@media (max-height: 768px)
+{
+  .container {
+    padding: 2.5% 10%;
+  }
+
+  .container-child-leftbox,
+  .container-child__rightbox {
+    gap: 4rem;
+  }
+
+  .container-child__rectangle {
+    width: 18rem;
+    height: 30rem;
+    padding: 1.5rem;
+  }
+
+  .container-child__input {
+    height: 12rem;
+  }
+
+  .container-child__title {
+    font-size: 2.5rem;
+  }
+
+  .container-child-button {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .mag-cat {
+    height: 18rem;
+    width: 13rem;
+  }
+
+  .container-child__titleboxandtext {
+    gap: 3rem;
+  }
+
+  .container-child-buttons {
+    gap: 2.5rem;
+  }
+
+  .container-child__texts {
+    gap: 1rem;
+  }
+
+  .container-child__text1 {
+    font-size: 1.2rem;
+  }
+
+  .container-child__text2 {
+    font-size: 0.6rem;
+  }
+
+  .container-child__rule {
+    font-size: 0.7rem;
+  }
+
+  .container-child__copybtn {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .credits {
+    gap: 0.2rem;
+    font-size: 0.7rem; 
+  }
+
+  .githublogo {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+@media (max-width: 1200px)
+{
+  .container
+  {
+    flex-direction: column;
+    padding: 5%;
+    display: flex;
+  }
+  .container-child
+  {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .container-child-leftbox
+  {
+    align-items: center;
+    gap: 5%;
+    flex-direction: column;
+  }
+
+  .container-child__rightbox
+  {
+    align-items: center;
+    padding: 2%;
+    gap: 2%;
+  }
+
+  .container-child__rectangle
+  {
+    width: 15rem;
+    height: 30rem;
+  }
+
+  .container-child__input 
+  {
+    height: auto;
+  }
+
+  .container-child-buttons
+  {
+    margin-bottom: 2%;
+  }
+
+  .mag-cat
+  {
+    height: 14rem;
+    width: 11rem;
+  }
+
+}
