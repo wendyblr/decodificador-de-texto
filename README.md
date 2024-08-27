@@ -12,4 +12,3 @@
 ##
 
 <b>Vercel:</b> 
-https://cat-text-decoder.vercel.app/
